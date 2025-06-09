@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignesh Kumar - Cybersecurity Specialist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Matrix Rain Background -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- Main Portfolio -->
+    <div id="main-portfolio">
+        <!-- Navigation -->
+        <nav class="cyber-nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <span class="brand-text"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">HOME</a></li>
+                    <li><a href="#about" class="nav-link">ABOUT</a></li>
+                    <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                    <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                    <li><a href="#achievements" class="nav-link">ACHIEVEMENTS</a></li>
+                    <li><button id="console-btn" class="btn btn--console">CONSOLE</button></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                        <div class="terminal-title">root@vignesh:~$</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">vignesh@cybersec:~$</span>
+                            <span class="command">Welcome</span>
+                        </div>
+                        <div class="terminal-output">
+                            <div class="typing-text" id="hero-typing"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-info">
+                    <h1 class="hero-title glow-text">VIGNESHKUMAR R</h1>
+                    <h2 class="hero-subtitle">Computer Network & Cybersecurity Enthutiast</h2>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-value">8.48</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">2</span>
+                            <span class="stat-label">PATENTS</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">4</span>
+                            <span class="stat-label">AWARDS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">ABOUT</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="cyber-text">Passionate cybersecurity professional with expertise in IoT network security, VPN tunneling, and wireless mesh networks. Published patent holder with multiple hackathon victories and IEEE leadership experience.</p>
+                        <div class="education-card">
+                            <h3>EDUCATION</h3>
+                            <div class="edu-details">
+                                <span class="degree">B.E (ECE)</span>
+                                <span class="college">Sri Eshwar College of Engineering</span>
+                                <span class="duration">2022-2026</span>
+                                <span class="cgpa">CGPA: 8.48</span>
+                            </div>
+                        </div>
+                        <div class="contact-info">
+                            <h3>CONTACT.INFO</h3>
+                            <div class="contact-details">
+                                <a href="mailto:mailltovigneshkumar@gmail.com" class="contact-link">
+                                    <span class="icon">📧</span>
+                                    mailltovigneshkumar@gmail.com
+                                </a>
+                                <a href="tel:+919384943252" class="contact-link">
+                                    <span class="icon">📱</span>
+                                    +91 9384943252
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">PROJECTS</h2>
+                <div class="projects-grid">
+                    <div class="project-card" data-project="vpn">
+                        <div class="card-header">
+                            <h3>VPN Tunneled Security for IoT Networks</h3>
+                            <span class="status--success">PATENT PUBLISHED</span>
+                        </div>
+                        <p>Implemented secure, encrypted VPN connections for IoT with server-based access and strong password protection</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Cisco Packet Tracer</span>
+                            <span class="tech-tag">DNS</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">VPN Tunneling</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="patent-no">Patent: 202541002284 A</span>
+                            <span class="year">2024</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="mesh">
+                        <div class="card-header">
+                            <h3>Ad-hoc Mesh Network for Vehicles</h3>
+                            <span class="status--info">COMPLETED</span>
+                        </div>
+                        <p>Designed an ad-hoc mesh network using IEEE 802.11p for V2V and V2I communication, ensuring accident alerts</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Cisco Packet Tracer</span>
+                            <span class="tech-tag">ESP 8266</span>
+                            <span class="tech-tag">IR Sensor</span>
+                            <span class="tech-tag">IEEE 802.11</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="year">2024</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="topology">
+                        <div class="card-header">
+                            <h3>Optimized Wireless Networking Topology</h3>
+                            <span class="status--info">COMPLETED</span>
+                        </div>
+                        <p>Developed a hybrid Peer-to-Peer and ad-hoc network topology using RSSI with ESP8266 for enhanced efficiency</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Cisco Packet Tracer</span>
+                            <span class="tech-tag">ESP8266</span>
+                            <span class="tech-tag">IEEE 802.11</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="year">2024</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="aviammo">
+                        <div class="card-header">
+                            <h3>AVIAMMO: Ammonia Based Fuel Generation</h3>
+                            <span class="status--success">PATENT PUBLISHED</span>
+                        </div>
+                        <p>Designed a system to extract ammonia, methane, and natural fertilizer from bird litter with real-time monitoring</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">ESP8266</span>
+                            <span class="tech-tag">Blynk</span>
+                            <span class="tech-tag">Peltier Law</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="patent-no">Patent: 202541002285 A</span>
+                            <span class="year">2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">SKILLS</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>PROGRAMMING</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">C</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">C++</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>NETWORKING</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Configurations</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Network Research</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Routing</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="88"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Others</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Network Security</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Internet of Things</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="87"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Critical Thinking</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>TOOLS</h3>
+                        <div class="tools-grid">
+                            <span class="tool-tag">Wireshark</span>
+                            <span class="tool-tag">Packet Tracer</span>
+                            <span class="tool-tag">Nmap</span>
+                            <span class="tool-tag">Kali Linux</span>
+                            <span class="tool-tag">Termux</span>
+                            <span class="tool-tag">VS Code</span>
+                            <span class="tool-tag">GitHub</span>
+                            <span class="tool-tag">Netsim</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <h2 class="section-title">ACHIEVEMENTS</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card major">
+                        <div class="achievement-icon">🏆</div>
+                        <h3>Avishkaar'24 - Winner</h3>
+                        <p>48 hours Hackathon - GeeksForGeeks</p>
+                        <div class="prize">₹1,25,000</div>
+                        <span class="year">2024</span>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🥈</div>
+                        <h3>Hackfest'24 - II Prize</h3>
+                        <p>SAP - KPRIET (Regional Round)</p>
+                        <div class="prize">₹10,000</div>
+                        <span class="year">2024</span>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">👨‍💼</div>
+                        <h3>IEEE Chairman</h3>
+                        <p>Institute of Electrical and Electronics Engineers</p>
+                        <div class="member-id">Member ID: 99492003</div>
+                        <span class="experience">2 years experience</span>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">💡</div>
+                        <h3>Ideas4Life - Top 70</h3>
+                        <p>Ministry of Environment</p>
+                        <span class="year">2024</span>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">💻</div>
+                        <h3>LeetCode Profile</h3>
+                        <p>Global Rank 553,773</p>
+                        <div class="stats">
+                            <span>200 Problems</span>
+                            <span>Rating: 1450</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Terminal Console -->
+    <div id="terminal-console" class="terminal-fullscreen hidden">
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <div class="terminal-controls">
+                    <span class="control red" id="close-terminal"></span>
+                    <span class="control yellow"></span>
+                    <span class="control green"></span>
+                </div>
+                <div class="terminal-title">Vignesh Kumar - Cybersecurity Terminal v2.1.0</div>
+            </div>
+            <div class="terminal-content">
+                <div id="terminal-output">
+                    <div class="terminal-line">
+                        <div class="ascii-art">
+ ██▒   █▓ ██▓  ▄████  ███▄    █ ▓█████   ██████  ██░ ██ 
+▓██░   █▒▓██▒ ██▒ ▀█▒ ██ ▀█   █ ▓█   ▀ ▒██    ▒ ▓██░ ██▒
+ ▓██  █▒░▒██▒▒██░▄▄▄░▓██  ▀█ ██▒▒███   ░ ▓██▄   ▒██▀▀██░
+  ▒██ █░░░██░░▓█  ██▓▓██▒  ▐▌██▒▒▓█  ▄   ▒   ██▒░▓█ ░██ 
+   ▒▀█░  ░██░░▒▓███▀▒▒██░   ▓██░░▒████▒▒██████▒▒░▓█▒░██▓
+   ░ ▐░  ░▓   ░▒   ▒ ░ ▒░   ▒ ▒ ░░ ▒░ ░▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒
+   ░ ░░   ▒ ░  ░   ░ ░ ░░   ░ ▒░ ░ ░  ░░ ░▒  ░ ░ ▒ ░▒░ ░
+     ░░   ▒ ░░ ░   ░    ░   ░ ░    ░   ░  ░  ░   ░  ░░ ░
+      ░   ░        ░          ░    ░  ░      ░   ░  ░  ░
+     ░                                                   
+                        </div>
+                        <div class="welcome-msg">
+                            <span class="green">Welcome to Vignesh Kumar's Cybersecurity Terminal</span><br>
+                            <span class="blue">Computer Network & Cybersecurity Enthusiast</span><br>
+                            <span class="orange">Type 'help' to see available commands</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="terminal-input-line">
+                    <span class="prompt">vk@cybersec:~$</span>
+                    <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
+                    <span class="cursor">█</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
